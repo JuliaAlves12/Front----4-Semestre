@@ -1,0 +1,70 @@
+.catalogo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.titulo {
+  text-align: center;
+  color: var(--verde-escuro);
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cartao {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.conteudo {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.nome {
+  margin: 0;
+  color: var(--verde-escuro);
+  font-size: 1.2rem;
+}
+
+.descricao {
+  margin: 0;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.botao-favorito {
+  background-color: var(--verde-claro);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.botao-favorito:hover {
+  background-color: var(--verde-escuro);
+}
+
+.botao-favorito.favoritado {
+  background-color: var(--verde-escuro);
+  font-weight: bold;
+}
